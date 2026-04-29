@@ -1,0 +1,3 @@
+packages:
+    - "apps/*" #Semua Aplikasi meliputi api, portal, admin
+    - "packages/*" #Package Bersama seperti ui, types, config, dll
