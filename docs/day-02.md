@@ -13,3 +13,6 @@
 - touch src/index.ts
 - untuk API gunakan port 8000
 - jalankan pnpm dev
+## Kembali ke root 
+- cd ../..
+- edit script pada package.json
