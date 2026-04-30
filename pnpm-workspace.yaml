@@ -1,3 +1,11 @@
 packages:
-    - "apps/*" #Semua Aplikasi meliputi api, portal, admin
-    - "packages/*" #Package Bersama seperti ui, types, config, dll
+  - "apps/*" #Semua Aplikasi meliputi api, portal, admin
+  - "packages/*" #Package Bersama seperti ui, types, config, dll
+allowBuilds:
+  "@prisma/engines": true
+  better-sqlite3: true
+  esbuild: true
+  prisma: true
+catalogs:
+  prisma:
+    prisma: latest

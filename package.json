@@ -7,7 +7,13 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "biome check .",
 		"format": "biome format .",
-		"dev:api": "pnpm --filter ./apps/api dev"
+		"dev:api": "pnpm --filter ./apps/api dev",
+		"db:generate": "pnpm --filter database db:generate",
+		"db:migrate": "pnpm --filter database db:migrate",
+		"db:deploy": "pnpm --filter database db:deploy",
+		"db:studio": "pnpm --filter database db:studio",
+		"db:test": "pnpm --filter database db:test",
+		"db:seed": "pnpm --filter database db:seed"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,5 +21,8 @@
 	"packageManager": "pnpm@10.33.2",
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.13"
+	},
+	"dependencies": {
+		"database": "workspace:*"
 	}
 }

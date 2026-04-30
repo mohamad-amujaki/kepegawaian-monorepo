@@ -1,0 +1,30 @@
+{
+	"name": "database",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"db:generate": "prisma generate",
+		"db:migrate": "prisma migrate dev",
+		"db:deploy": "prisma migrate deploy",
+		"db:studio": "prisma studio",
+		"db:test": "tsx scripts/test-database.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.33.2",
+	"devDependencies": {
+		"@types/better-sqlite3": "^7.6.13",
+		"@types/node": "^20.19.39",
+		"prisma": "catalog:prisma",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@prisma/adapter-better-sqlite3": "^7.8.0",
+		"@prisma/client": "^7.8.0",
+		"dotenv": "^17.4.2"
+	}
+}
